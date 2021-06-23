@@ -2,7 +2,6 @@ const withTM = require('next-transpile-modules')(['usfm-editor']);
 
 
 module.exports = withTM({
-  basePath: '/UsfmEditorNextJs/',
   assetPrefix: '/UsfmEditorNextJs/',
   webpack: (config, { isServer, webpack }) => {
     // Fixes npm packages that depend on `fs` module

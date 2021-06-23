@@ -1,6 +1,4 @@
-import { UsfmMarkers } from "usfm-editor"
-
-export const DemoToolbarSpecs = {
+const DemoToolbarSpecs = {
     "Section Header": {
         icon: "\\s",
         cssClass: "s-toolbar-button",
@@ -28,3 +26,4 @@ export const DemoToolbarSpecs = {
         },
     },
 }
+export default DemoToolbarSpecs

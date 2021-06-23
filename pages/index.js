@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createBasicUsfmEditor, withChapterPaging, withChapterSelection, withToolbar } from "usfm-editor"
-import { DemoToolbarSpecs } from './DemoToolbarSpecs'
+import { DemoToolbarSpecs } from '../compoents/DemoToolbarSpecs'
 
 const loading = String.raw`
 \id XXA LOADING

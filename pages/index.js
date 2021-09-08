@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createBasicUsfmEditor, withChapterPaging, withChapterSelection, withToolbar } from "usfm-editor"
-import { DemoToolbarSpecs } from '../compoents/DemoToolbarSpecs'
+import { DemoToolbarSpecs } from '../components/DemoToolbarSpecs'
 
 const loading = String.raw`
 \id 1TI
@@ -42,11 +42,7 @@ function Home() {
   const CustomEditor = withToolbar(withChapterSelection(withChapterPaging(createBasicUsfmEditor())))
 
   const [sourceString, setSourceString] = useState(loading);
-  useEffect(() => {
-    window.fetch("https://git.door43.org/unfoldingWord/en_ult/raw/tag/25/27-DAN.usfm")
-          .then(r=> r.text())
-          .then(text => { setSourceString(text) })
-  })
+
   
   return (
     <div className="App">
